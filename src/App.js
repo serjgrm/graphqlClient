@@ -6,7 +6,7 @@ import {CREATE_USER} from "./mutations/user";
 
 const App = () => {
     const {data, loading, error, refetch} = useQuery(GET_ALL_USERS,{pollInterval:500});
-    const {data:oneUser, loading: loadingOneUser} = useQuery(GET_ONE_USER, {
+    const {data: oneUser, loading: loadingOneUser} = useQuery(GET_ONE_USER, {
         variables: {
             id: 1
         }
